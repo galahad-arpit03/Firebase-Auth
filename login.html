@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            border: none;
+        }
+
+        .navbar a {
+            color: #fff;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn-success {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-success:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Auth Login - Firebase</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="login_email" id="login_email" class="form-control"
+                        placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="login_password" id="login_password" class="form-control"
+                        placeholder="Enter your password">
+                </div>
+                <button type="button" id="login" name="login" class="btn btn-success">Login</button>
+                <!-- <button type="button" id="logout" name="logout" class="btn btn-success">Logout</button> -->
+            </div>
+        </form>
+    </div>
+    <br>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
